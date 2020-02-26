@@ -15,7 +15,6 @@ function App() {
       <br/>
       <SearchBar />
       <EmployeeTable />
-      
 
     </>
   );
