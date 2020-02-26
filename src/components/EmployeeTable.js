@@ -1,40 +1,16 @@
-import React from 'react';
-import employees from '../employees.json'
+import React, { Component } from 'react';
 
-const Employees = employees.forEach(renderEmployees())
 
-function renderEmployees(employee) {
-    const item = `
-    <tr>
-        <th scope="row">1</th>
-        <td>${employee.picture.medium}</td>
-        <td>${employee.name}</td>
-        <td>${employee.email}</td>
-        <td>${employee.phone}</td>
-    </tr>`
-
-    return item;
-}
-
-function Table() {
-    return (
+class EmployeeTable extends Component {
+    render() {
+        console.log(this.props.EmployeeList)
+      return (
         <>
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Image</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Phone</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {Employees}
-                </tbody>
-            </table>
+        <h1>hello</h1>
         </>
-    )
+      );
+  
+    }
+  }
 
-}
-
-export default Table;
+export default EmployeeTable;

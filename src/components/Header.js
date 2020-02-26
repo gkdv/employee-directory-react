@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Title(props) {
+function Header(props) {
     return (
         <nav className="navbar navbar-light bg-light">
             <span className="navbar-brand mb-0 h1">{props.name} Employee Directory</span>
@@ -9,4 +9,4 @@ function Title(props) {
     )
 }
 
-export default Title;
+export default Header;
